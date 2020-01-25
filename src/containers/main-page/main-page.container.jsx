@@ -38,19 +38,6 @@ class MainPage extends React.Component {
         })
     }
 
-    handleRenderArtistsCards = () => {
-        console.log('entered handlerenderartistscards')
-        const cardList = this.state.artists.map((element, i) => {
-            return (
-            <div>
-                <ArtistCard name={element.name} listeners={element.listeners} key={i}/>
-            </div>
-            )
-        })
-        console.log('cardList:', cardList);
-        return cardList
-    }
-
     render() {
         return (
             <FormControl >
